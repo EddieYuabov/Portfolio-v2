@@ -1,10 +1,12 @@
 *{
     margin:0px;
-    padding:0px
+    padding:0px;
+    box-sizing: border-box;
 }
 html{
     /* background-color: #e7fbba; */
     background-color: #fef2cf;
+    /* background-color: #fdf4da; */
     /* background-color: #fbebba; */
     /* background-color: #c3cbfb; */
     /* background-color: #fbbaba; */
@@ -19,11 +21,11 @@ html{
 }
 #logo-font-E{
     padding-left: 50px;
+    padding-top: 8px;
     /* color:rgb(255, 220, 172); */
     color:rgb(0, 0, 0);
     /* text-shadow: 0px 0px 8px #464646; */
     font-size: 35px;
-    margin-top: 5px;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
@@ -41,7 +43,8 @@ html{
     color:rgb(0, 0, 0);
     /* text-shadow: 0px 0px 8px #464646; */
     font-size: 35px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    padding-top: 8px;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
@@ -62,6 +65,7 @@ a{
     padding: 10px 0px 10px 0px;
     /* background-color: #00000014; */
     /* background-color: #00000014; */
+    /* background-color: #fef3d3; */
     background-color: #f8ebc5;
 }
 #nav-about-font{
@@ -147,7 +151,7 @@ a{
     min-height:100vh;
     align-items: center;
     justify-content: center;
-    margin-top: -150px;
+    margin-top: -110px;
 }
 .home-font{
     display:grid;
@@ -158,14 +162,16 @@ a{
     /* opacity: 70%; */
     /* color: #677052; */
     color: #787878;
+    padding:20px 10% 20px 10%;
 }
 .name-font{
     margin-top: -20px;
     margin-bottom: -20px;
     display:grid;
     text-align: center;
-    font-size:53px;
+    font-size:60px;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Nunito';
     font-family: 'Nunito', sans-serif;
     color:#179800;
 }
@@ -182,15 +188,16 @@ a{
 /* -------------------About------------------- */
 
 #about{
-    /* border-style: groove; */
     min-height: 100vh;
-    padding: 200px 10% 0px 17%;
+    /* padding: 225px 10% 0px 10%; */
+    padding: 22% 10% 0px 10%;
 }
 #about-p{
     margin-top: -5px;
     font-size: 18px;
     display:flow-root;
     text-align: center;
+    padding:0px 15% 0px 15%;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Nunito', sans-serif;
     /* padding:0px 250px 0px 250px */
@@ -198,8 +205,16 @@ a{
 #about-font{
     font-family: 'Nunito', sans-serif;
     /* padding-left: 300px; */
-    font-size: 25px;
+    font-size: 20px;
     color:#179800;
+    padding-bottom: 10px;
+}
+#about-subfont{
+    font-family: 'Nunito', sans-serif;
+    /* padding-left: 300px; */
+    font-size: 25px;
+    color:#0d5400;
+    padding-bottom: 10px;
 }
 #about-layout{
     display: grid;
@@ -210,7 +225,6 @@ a{
     height: 570px;
     width: 500px;
     box-shadow: 0px 0px 10px 2px;
-    margin-top: 25px;
 }
 #about-par{
     padding: 0px 50px 0px 0px;
@@ -228,19 +242,33 @@ a{
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-top: -200px;
+    /* margin-top: 200px; */
 }
 #skills-font{
     font-family: 'Nunito', sans-serif;
+    padding-bottom: 10px;
     /* padding-top: 20%; */
     padding-left: 1%;
-    /* margin-bottom: -400px; */
-    display: grid;
+    /* margin-bottom: -30%; */
+    /* display: grid; */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 25px;
+    /* text-align: center; */
+    font-size: 20px;
     color:#179800;
+}
+#skills-subfont{
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 10px;
+    /* padding-top: 20%; */
+    padding-left: 1%;
+    /* margin-bottom: -30%; */
+    /* display: grid; */
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 25px;
+    color:#0d5400;
 }
 #skills-layout{
     /* padding:0px 300px 0px 300px; */
@@ -251,6 +279,7 @@ a{
 }
 .skill{
     display: grid;
+    justify-content: center;
     /* border-style: groove; */
     margin: 20px;
     padding-top: 20px;
@@ -258,11 +287,11 @@ a{
     /* padding: 30px 10px 30px 10px */
 }
 .skill-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     background-color: white;
     border-radius: 10px 10px 10px 10px;
     margin:10px 10px 10px 10px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
     /* padding: 30px 10px 30px 10px; */
     width: 250px;
     height: 100px;
@@ -272,30 +301,68 @@ a{
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-left: 32px;
+    margin-top: 20px;
+    margin-left: 23px;
     /* height: 80px;
     width:90px; */
     height: 60%;
-    width:50%
+    width:60%
 }
+#skill-img-flask{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    /* height: 80px;
+    width:90px; */
+    height: 60%;
+    width:60%
+}
+#skill-img-mongo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 15px;
+    /* height: 80px;
+    width:90px; */
+    height: 80%;
+    width: 80%
+}
+
 
 /*  */
 
 /* -------------------Projects------------------- */
 #projects{
+    /* margin-top: 100px; */
     display: grid;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     min-height: 100vh;
-    padding: 125px 0% 0px 0%;
+    /* padding: 125px 0px 0px 0px; */
 }
 #projects-font{
     font-family: 'Nunito', sans-serif;
-    padding-left: 10%;
-    padding-bottom: 30px;
-    display: block;
-    font-size: 25px;
+    /* padding-top: 30%; */
+    padding-left: 3%;
+    padding-bottom: 5px;
+    padding-top: 10%;
+    /* position:absolute; */
+    /* padding-bottom: 10px; */
+    font-size: 20px;
     color:#179800;
+}
+#projects-subfont{
+    font-family: 'Nunito', sans-serif;
+    /* padding-top: 30%; */
+    padding-left: 3%;
+    padding-bottom: 20px;
+    /* position:absolute; */
+    /* padding-bottom: 10px; */
+    font-size: 25px;
+    color:#0d5400; 
 }
 #projects-layout{
     display: grid;
@@ -307,20 +374,119 @@ a{
     /* padding-left: 15%; */
     /* width:1200px; */
 }
-.project-img{
-    display: block;
-    /* justify-content: center; */
+.project-img-layout{
+    display: grid;
+    /* justify-content: space-around; */
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-right: 40px;/ */
-    margin-bottom: 45px;
-    height: 85%;
-    width: 60%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 1px;
+    justify-content: center;
 }
+#hogwarts-img{
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-right: 40px;/ */
+    /* margin-bottom: 45px; */
+    /* height: 80%; */
+    /* width: 100%; */
+    height:400px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px;
+    /* overflow: hidden; */
+    margin: 10px 30px 60px 30px;
+    /* transition: 400ms; */
+    cursor: pointer;
 
+}
+#hogwarts-img:hover{
+    height:420px;
+    width: 620px;
+    margin: 0px 20px 50px 20px;
+    /* transition: 400ms; */
+}
+#marvel-img{
+    height:400px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px;
+    /* border: 6px solid white; */
+    margin: 10px 30px 60px 30px;
+    /* transition: 400ms; */
+    cursor: pointer;
+}
+#marvel-img:hover{
+    height:420px;
+    width: 620px;
+    margin: 0px 20px 50px 20px;
+    /* transition: 400ms; */
+}
+#blackjack-img{
+    height:400px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px;
+    margin: 10px 30px 60px 30px;
+    /* transition: 400ms; */
+    cursor: pointer;
+}
+#blackjack-img:hover{
+    height:420px;
+    width: 620px;
+    margin: 0px 20px 50px 20px;
+    /* transition: 400ms; */
+}
+#blog-img{
+    height:400px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px;
+    /* border: 6px solid white; */
+    margin: 10px 30px 60px 30px;
+    /* transition: 400ms; */
+    cursor: pointer;
+}
+#blog-img:hover{
+    height:420px;
+    width: 620px;
+    margin: 0px 20px 50px 20px;
+    /* transition: 400ms; */
+}
+.card-body{
+    background-color: white;
+    height:85%;
+    width: 60%;
+}
+/* .project-card{
+    display: block;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px;
+    margin:10px 20% 10px 20%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+} */
+.project-body{
+    margin: 0px 50px 0px 50px;
+    /* margin: 10px */
+}
+.live-site{
+    /* padding: 0px 100px 0px 100px; */
+    margin:1px;
+    font-family: 'Nunito', sans-serif;
+    color:black
+}
+.link-button{
+    padding:10px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+  }
+  .font{
+    font-family: 'Nunito', sans-serif;
+  }
 /*  */
 
 /* -------------------Footer------------------- */
@@ -343,29 +509,29 @@ footer {
     font-family: 'Nunito', sans-serif;
 }
 .footer-linkedin{
-    height: 40px;
-    width:40px;
+    height: 60px;
+    width:60px;
     background-color: #f8ebc5;
     padding: 10px 10px 10px 10px;
     transition: 500ms;
 }
 .footer-linkedin:hover{
     transition: 500ms;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     padding: 5px 5px 5px 5px
 }
 .footer-github{
-    height: 40px;
-    width:40px;
+    height: 60px;
+    width:60px;
     background-color: #f8ebc5;
     padding: 10px 10px 10px 10px;
     transition: 500ms;
 }
 .footer-github:hover{
     transition: 500ms;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     padding: 5px 5px 5px 5px
 }
 #footer-tags{
@@ -469,3 +635,1086 @@ footer {
       transform: translate3d(0,-3px,0) rotateZ(0.01deg);
     }
   }
+  
+  /* -------------------media 1380px-------------------  */
+  
+  @media (max-width:1380px){
+    #home{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        /* padding: 150px 150px; */
+        padding-right: 0px;
+        min-height:100vh;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .slider-thumb-1::before {
+        position: absolute;
+        content: "";
+        left: 25%;
+        right:25%;
+        top: 10%;
+        width: 350px;
+        height: 350px;
+        /* background: #6c9667; */
+        /* background: #909667; */
+        /* background: #ffff00; */
+        background: #f2ff00;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        will-change: border-radius, transform, opacity;
+        animation: sliderShape 5s linear infinite;
+        display: block;
+        z-index: -1;
+        -webkit-animation: sliderShape 5s linear infinite;
+        opacity: 50%;
+    }
+    .slider-thumb-2::before {
+        position: absolute;
+        content: "";
+        left: 40%;
+        top: 10%;
+        width: 350px;
+        height: 350px;
+        /* background: #856796; */
+        /* background: #966767; */
+        background: #ff0000;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        will-change: border-radius, transform, opacity;
+        animation: sliderShape 5s linear infinite;
+        display: block;
+        z-index: -1;
+        -webkit-animation: sliderShape 4s linear infinite;
+        opacity: 50%;
+    }
+    .slider-thumb-3::before {
+        position: absolute;
+        content: "";
+        left: 35%;
+        top: 20%;
+        width: 350px;
+        height: 350px;
+        /* background: #968d67; */
+        /* background: #677f96; */
+        background: #0084ff;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        will-change: border-radius, transform, opacity;
+        animation: sliderShape 5s linear infinite;
+        display: block;
+        z-index: -1;
+        -webkit-animation: sliderShape 3s linear infinite;
+        opacity: 50%;
+    }
+    #skills-layout{
+        /* padding:0px 300px 0px 300px; */
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    #hogwarts-img{
+        height:300px;
+        width: 450px;
+        margin: 10px 30px 60px 30px;
+    }
+    #hogwarts-img:hover{
+        height:315px;
+        width: 472.5px;
+        margin: 0px 18px 55px 20px;
+    }
+    #marvel-img{
+        height:300px;
+        width: 450px;
+        margin: 10px 30px 60px 30px;
+    }
+    #marvel-img:hover{
+        height:315px;
+        width: 472.5px;
+        margin: 0px 18px 55px 20px;
+    }
+    #blackjack-img{
+        height:300px;
+        width: 450px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 1px;
+        margin: 10px 30px 60px 30px;
+        cursor: pointer;
+    }
+    #blackjack-img:hover{
+        height:315px;
+        width: 472.5px;
+        margin: 0px 18px 55px 20px;
+    }
+    #blog-img{
+        height:300px;
+        width: 450px;
+        margin: 10px 30px 60px 30px;
+    }
+    #blog-img:hover{
+        height:315px;
+        width: 472.5px;
+        margin: 0px 18px 55px 20px;
+    }
+    #project-div{
+        margin-top: 350px;
+    }
+    
+    #projects-font{
+        padding-top: 0%;
+    }
+  }
+
+  /* -------------------media 1180px-------------------  */
+
+  @media (max-width:1180px){
+    #skills-font{
+        padding-bottom: 10px;
+    }
+    #skills-font-layout{
+        display: grid;
+        /* justify-content: center; */
+    }
+    #project-font-layout{
+        display: grid;
+        /* justify-content: center; */
+        padding-top: 90px;
+    }
+    #project-div{
+        margin-top: 260px;
+    }
+    #about-p{
+        display: grid;
+        margin-top: -5px;
+        font-size: 18px;
+        /* display:flow-root; */
+        text-align:center;
+        padding:0px 15% 0px 15%;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        /* padding:0px 250px 0px 250px */
+    }
+    #about-font{
+        display: grid;
+        /* justify-content: center; */
+        font-family: 'Nunito', sans-serif;
+        /* padding-left: 300px; */
+        font-size: 20px;
+        color:#179800;
+        padding-bottom: 10px;
+    }
+    #about-layout{
+        display: block;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+    #about{
+        min-height: 100vh;
+        /* padding: 225px 10% 0px 10%; */
+        padding: 12% 10% 0px 10%;
+    }
+    #portfolio-pic{
+        margin-top: 10px;
+        height: 570px;
+        width: 500px;
+        box-shadow: 0px 0px 10px 2px;
+    }
+    #about-par{
+        padding: 0px 0px 50px 0px;
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        /* text-align: center; */
+    }
+    #porfolio-pic-div{
+        display:grid;
+        justify-content: center;
+    }
+  }
+
+  /* -------------------media 1100px-------------------  */
+
+  @media (max-width:1100px){
+    #skills-layout{
+        /* padding:0px 300px 0px 300px; */
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+    }
+    #skills-font-layout{
+        display: grid;
+        /* justify-content: center; */
+    }
+    #hogwarts-img{
+        height:250px;
+        width: 375px;
+        margin: 10px 30px 50px 30px;
+    }
+    #hogwarts-img:hover{
+        height:262.5px;
+        width: 393.75px;
+        margin: 0px 20px 50px 20px;
+    }
+    #marvel-img{
+        height:250px;
+        width: 375px;
+        margin: 10px 30px 60px 30px;
+    }
+    #marvel-img:hover{
+        height:262.5px;
+        width: 393.75px;
+        margin: 0px 20px 50px 20px;
+    }
+    #blackjack-img{
+        height:250px;
+        width: 375px;
+        margin: 10px 30px 60px 30px;
+    }
+    #blackjack-img:hover{
+        height:262.5px;
+        width: 393.75px;
+        margin: 0px 20px 50px 20px;
+    }
+    #blog-img{
+        height:250px;
+        width: 375px;
+        margin: 10px 30px 60px 30px;
+    }
+    #blog-img:hover{
+        height:262.5px;
+        width: 393.75px;
+        margin: 0px 20px 50px 20px;
+    }
+    #project-div{
+        margin-top: 260px;
+    }
+  }
+
+
+/* -------------------media 850px-------------------  */
+  
+    @media (max-width:850px){
+        .slider-thumb-1::before {
+            position: absolute;
+            content: "";
+            left: 18%;
+            top: 10%;
+            width: 350px;
+            height: 350px;
+            /* background: #6c9667; */
+            /* background: #909667; */
+            /* background: #ffff00; */
+            background: #f2ff00;
+            border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+            will-change: border-radius, transform, opacity;
+            animation: sliderShape 5s linear infinite;
+            display: block;
+            z-index: -1;
+            -webkit-animation: sliderShape 5s linear infinite;
+            opacity: 50%;
+        }
+        .slider-thumb-2::before {
+            position: absolute;
+            content: "";
+            left: 37%;
+            top: 10%;
+            width: 350px;
+            height: 350px;
+            /* background: #856796; */
+            /* background: #966767; */
+            background: #ff0000;
+            border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+            will-change: border-radius, transform, opacity;
+            animation: sliderShape 5s linear infinite;
+            display: block;
+            z-index: -1;
+            -webkit-animation: sliderShape 4s linear infinite;
+            opacity: 50%;
+        }
+        .slider-thumb-3::before {
+            position: absolute;
+            content: "";
+            left: 28%;
+            top: 20%;
+            width: 350px;
+            height: 350px;
+            /* background: #968d67; */
+            /* background: #677f96; */
+            background: #0084ff;
+            border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+            will-change: border-radius, transform, opacity;
+            animation: sliderShape 5s linear infinite;
+            display: block;
+            z-index: -1;
+            -webkit-animation: sliderShape 3s linear infinite;
+            opacity: 50%;
+        }
+        #skills-layout{
+            /* padding:0px 300px 0px 300px; */
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr; */
+        }
+        .skill-container{
+            display:grid;
+            align-items: center;
+            justify-content:center ;
+            grid-template-columns: 1fr 1fr;
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+            margin:10px 20px 10px 20px;
+            padding: 30px 10px 30px 10px;
+            width: 90%;
+            height: 90%;
+            box-shadow: 0px 0px 10px 1px;
+        }
+        .skill-img{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            margin-left: 40px;
+            /* height: 80px;
+            width:90px; */
+            height: 80%;
+            width:60%
+        }
+        #skill-img-flask{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            margin-left: 40px;
+            /* height: 80px;
+            width:90px; */
+            height: 60%;
+            width:60%
+        }
+        #skill-img-mongo{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            margin-left: 25px;
+            /* height: 80px;
+            width:90px; */
+            height: 80%;
+            width: 80%
+        }
+        .skill{
+            display: grid;
+            justify-content: center;
+            /* border-style: groove; */
+            margin: 20px;
+            padding-top: 20px;
+            font-family: 'Nunito', sans-serif;
+            /* padding: 30px 10px 30px 10px */
+            font-size: 25px;
+        }
+        #skills-font{
+            font-family: 'Nunito', sans-serif;
+            padding-bottom: 10px;
+            /* padding-top: 20%; */
+            padding-left: 2.5%;
+            /* margin-bottom: -30%; */
+            /* display: grid; */
+            font-size: 20px;
+            color:#179800;
+        }
+        #skills-subfont{
+            padding-left: 2.5%;
+        }
+        #skills-font-layout{
+            padding-top: 200px;
+        }
+        #hogwarts-img{
+            display: grid;
+            height:80%;
+            width: 90%;
+            margin: 5% 5% 10% 5%;
+        }
+        #hogwarts-img:hover{
+            height:84%;
+            width: 94.5%;
+            margin: 4% 4% 8% 4%;
+        }
+        #marvel-img{
+            height:80%;
+            width: 90%;
+            margin: 5% 5% 10% 5%;
+        }
+        #marvel-img:hover{
+            height:84%;
+            width: 94.5%;
+            margin: 4% 4% 8% 4%;
+        }
+        #blackjack-img{
+            height:80%;
+            width: 90%;
+            margin: 5% 5% 10% 5%;
+        }
+        #blackjack-img:hover{
+            height:84%;
+            width: 94.5%;
+            margin: 4% 4% 8% 4%;
+        }
+        #blog-img{
+            height:80%;
+            width: 90%;
+            margin: 5% 5% 10% 5%;
+        }
+        #blog-img:hover{
+            height:84%;
+            width: 94.5%;
+            margin: 4% 4% 8% 4%;
+        }
+        #projects-layout{
+            display: grid;
+            align-items: center;
+            text-align: center;
+            /* grid-template-rows: 1fr 1fr; */
+            grid-template-columns: 1fr;
+            /* padding-right:15%; */
+            /* padding-left: 15%; */
+            /* width:1200px; */
+        }
+        .project-img-layout{
+            display: flex;
+            /* justify-content: space-around; */
+            align-items: center;
+            justify-content: center;
+        }
+        #projects-font{
+            font-family: 'Nunito', sans-serif;
+            padding-top: 30%;
+            padding-left: 5%;
+            padding-bottom: 20px;
+            /* position:absolute; */
+            /* padding-bottom: 10px; */
+            font-size: 20px;
+            color:#179800;
+        }
+        #projects-subfont{
+            padding-left: 5%;
+        }
+
+  }
+
+
+/* -------------------media 675px-------------------  */
+  
+@media (max-width:675px){
+    #skills-layout{
+        /* padding:0px 300px 0px 300px; */
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .skill-container{
+        display:grid;
+        align-items: center;
+        justify-content:center ;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        margin:10px 20px 10px 20px;
+        /* padding: 30px 10px 30px 10px; */
+        width: 94%;
+        height: 90%;
+        box-shadow: 0px 0px 10px 1px;
+    }
+    .skill-img{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 40px;
+        /* height: 80px;
+        width:90px; */
+        height: 80%;
+        width:60%
+    }
+    #skill-img-flask{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 40px;
+        /* height: 80px;
+        width:90px; */
+        height: 60%;
+        width:60%
+    }
+    #skill-img-mongo{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 25px;
+        /* height: 80px;
+        width:90px; */
+        height: 80%;
+        width: 80%
+    }
+    .skill{
+        display: grid;
+        justify-content: center;
+        /* border-style: groove; */
+        margin: 20px;
+        padding-top: 20px;
+        font-family: 'Nunito', sans-serif;
+        /* padding: 30px 10px 30px 10px */
+        font-size: 25px;
+    }
+    #skills-font{
+        font-family: 'Nunito', sans-serif;
+        padding-bottom: 10px;
+        /* padding-top: 20%; */
+        padding-left: 4%;
+        /* margin-bottom: -30%; */
+        /* display: grid; */
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color:#179800;
+    }
+    #skills-subfont{
+        padding-left: 4%;
+    }
+    #skills{
+        min-height: 100vh;
+        /* padding: 10px 2% 0px 2%; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    #about{
+        min-height: 100vh;
+        /* padding: 225px 10% 0px 10%; */
+        padding: 15% 10% 0px 10%;
+    }
+}
+/* -------------------media 576px-------------------  */
+
+@media (max-width:576px){
+    #nav-about-font{
+        font-size: 14px;
+        padding: 20px 30px 20px 30px;
+    }
+    #nav-about-font:hover{
+        font-size: 16px;
+        padding:19px 25px 18px 28px;
+    }
+    #nav-skills-font{
+        font-size: 14px;
+        padding: 20px 30px 20px 10px;
+    }
+    #nav-skills-font:hover{
+        font-size: 16px;
+        padding: 10px 25px 10px 8px;
+    }
+    #nav-projects-font{
+        font-size: 14px;
+        padding: 20px 30px 20px 10px;
+    }
+    #nav-projects-font:hover{
+        font-size: 16px;
+        padding: 10px 25px 10px 5.5px;
+    }
+    #nav-resume-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 20px 60px 20px 10px;
+    }
+    #nav-resume-font:hover{
+        font-size: 16px;
+        transition: 500ms;
+        padding: 15px 54px 13px 8px;
+    }
+}
+
+
+/* -------------------media 565px-------------------  */
+
+@media (max-width:565px){
+    .slider-thumb-1::before {
+        left: 10%;
+        top: 10%;
+        width: 350px;
+        height: 350px;
+    }
+    .slider-thumb-2::before {
+        left: 29%;
+        top: 10%;
+        width: 350px;
+        height: 350px;
+    }
+    .slider-thumb-3::before {
+        left: 20%;
+        top: 20%;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+/* -------------------media 500px-------------------  */
+
+
+
+@media (max-width:500px){
+    #logo-font-E{
+        padding-left: 5px;
+        padding-top: 8px;
+        /* color:rgb(255, 220, 172); */
+        color:rgb(0, 0, 0);
+        /* text-shadow: 0px 0px 8px #464646; */
+        font-size: 32px;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        cursor: pointer;
+        transition: 1s;
+    }
+    #logo-font-line{
+        color:rgba(83, 83, 83, 0.597);
+        /* text-shadow: 0px 0px 8px #464646; */
+        font-size: 32px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        margin-top: 8px;
+    }
+    #logo-font-Y{
+        color:rgb(0, 0, 0);
+        /* text-shadow: 0px 0px 8px #464646; */
+        font-size: 32px;
+        /* margin-top: 5px; */
+        padding-top: 8px;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        cursor: pointer;
+    }
+    #about-p{
+        padding: 50px 60px 0px 60px;
+    }
+    #about {
+        min-height: 100vh;
+        padding: 25% 10% 0px;
+    }
+    #skills-font-layout {
+        padding-top: 150px;
+    }
+    
+    #nav{
+        position: sticky;
+        /* box-shadow: 0px 7px 50px 1px; */
+        /* box-shadow: 0px 0px 10px 1px rgb(63, 63, 63); */
+        top: 0;
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        padding: 10px 0px 10px 0px;
+        /* background-color: #00000014; */
+        /* background-color: #00000014; */
+        /* background-color: #fef3d3; */
+        background-color: #f8ebc5;
+    }
+    #nav-about-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 20px 30px 20px 20px;
+        color:black;
+    }
+    #nav-about-font:hover{
+        font-size: 18px;
+        transition: 500ms;
+        padding: 20px 30px 20px 20px;
+    }
+    #nav-skills-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color: black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 20px 30px 20px 10px;
+    }
+    #nav-skills-font:hover{
+        font-size: 18px;
+        transition: 500ms;
+        padding: 10px 25px 5px 4.2px;
+    }
+    #nav-projects-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 20px 30px 20px 10px;
+    }
+    #nav-projects-font:hover{
+        font-size: 18px;
+        transition: 500ms;
+        padding: 10px 20px 5px 5.5px;
+    }
+    #nav-resume-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 20px 60px 20px 10px;
+    }
+    #nav-resume-font:hover{
+        font-size: 18px;
+        transition: 500ms;
+        padding: 10px 50px 5px 8px;
+    }
+    .home-font{
+        display:grid;
+        text-align: center;
+        font-size:35px;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        /* opacity: 70%; */
+        /* color: #677052; */
+        color: #787878;
+        padding:20px 2% 20px 2%;
+    }
+    .name-font{
+        margin-top: -20px;
+        margin-bottom: -20px;
+        display:grid;
+        text-align: center;
+        font-size:40px;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito';
+        font-family: 'Nunito', sans-serif;
+        color:#179800;
+    }
+
+
+    .slider-thumb-1::before {
+	position: absolute;
+	content: "";
+	left: 2%;
+	top: 10%;
+	width: 350px;
+	height: 350px;
+	/* background: #6c9667; */
+	/* background: #909667; */
+	/* background: #ffff00; */
+    background: #f2ff00;
+	border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+	will-change: border-radius, transform, opacity;
+	animation: sliderShape 5s linear infinite;
+	display: block;
+	z-index: -1;
+	-webkit-animation: sliderShape 5s linear infinite;
+    opacity: 50%;
+}
+.slider-thumb-2::before {
+	position: absolute;
+	content: "";
+	left: 30%;
+	top: 10%;
+	width: 350px;
+	height: 350px;
+	/* background: #856796; */
+	/* background: #966767; */
+	background: #ff0000;
+	border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+	will-change: border-radius, transform, opacity;
+	animation: sliderShape 5s linear infinite;
+	display: block;
+	z-index: -1;
+	-webkit-animation: sliderShape 4s linear infinite;
+    opacity: 50%;
+}
+.slider-thumb-3::before {
+	position: absolute;
+	content: "";
+	left: 20%;
+	top: 20%;
+	width: 350px;
+	height: 350px;
+	/* background: #968d67; */
+	/* background: #677f96; */
+	background: #0084ff;
+	border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+	will-change: border-radius, transform, opacity;
+	animation: sliderShape 5s linear infinite;
+	display: block;
+	z-index: -1;
+	-webkit-animation: sliderShape 3s linear infinite;
+    opacity: 50%;
+}
+
+#about-layout{
+    display: block;
+    /* padding:0px 300px 0px 300px; */
+}
+#portfolio-pic{
+    height: 470px;
+    width: 400px;
+    box-shadow: 0px 0px 10px 2px;
+    margin-top: 50px;
+}
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+@media (max-width:460px){
+    .slider-thumb-1::before {
+        position: absolute;
+        content: "";
+        left: 20%;
+        top: 20%;
+        width: 40%;
+        height: 20%;
+        /* background: #6c9667; */
+        /* background: #909667; */
+        /* background: #ffff00; */
+        background: #f2ff00;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        will-change: border-radius, transform, opacity;
+        animation: sliderShape 5s linear infinite;
+        display: block;
+        z-index: -1;
+        -webkit-animation: sliderShape 5s linear infinite;
+        opacity: 30%;
+        filter: blur(6px);
+    }
+    .slider-thumb-2::before {
+        position: absolute;
+        content: "";
+        left: 40%;
+        top: 20%;
+        width: 40%;
+        height: 20%;
+        /* background: #856796; */
+        /* background: #966767; */
+        background: #ff0000;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        will-change: border-radius, transform, opacity;
+        animation: sliderShape 5s linear infinite;
+        display: block;
+        z-index: -1;
+        -webkit-animation: sliderShape 4s linear infinite;
+        opacity: 30%;
+        filter: blur(6px);
+    }
+    .slider-thumb-3::before {
+        position: absolute;
+        content: "";
+        left: 30%;
+        top: 30%;
+        width: 40%;
+        height: 20%;
+        /* background: #968d67; */
+        /* background: #677f96; */
+        background: #0084ff;
+        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        will-change: border-radius, transform, opacity;
+        animation: sliderShape 5s linear infinite;
+        display: block;
+        z-index: -1;
+        -webkit-animation: sliderShape 3s linear infinite;
+        opacity: 30%;
+        filter: blur(6px);
+    }
+    #nav-about-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+        color:black;
+    }
+    #nav-about-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-skills-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color: black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-skills-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-projects-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-projects-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-resume-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-resume-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #portfolio-pic {
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0px 0px 10px 2px;
+    }
+    .skill-container{
+        display:grid;
+        align-items: center;
+        justify-content:center ;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        margin:10px 20px 10px 20px;
+        /* padding: 30px 10px 30px 10px; */
+        width: 90%;
+        height: 90%;
+        box-shadow: 0px 0px 10px 1px;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~375PX~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media (max-width:375px){
+    #nav-about-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+        color:black;
+    }
+    #nav-about-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-skills-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color: black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-skills-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-projects-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-projects-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-resume-font{
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        color:black;
+        display: grid;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 300;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #nav-resume-font:hover{
+        font-size: 12px;
+        transition: 500ms;
+        padding: 10px;
+    }
+    #portfolio-pic {
+        margin-top: 10px;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0px 0px 10px 2px;
+    }
+}

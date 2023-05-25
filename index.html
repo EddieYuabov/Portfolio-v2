@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src = "app.js" charset = "utf-8"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
     <title>E|Y FullStack Developer</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
         <div id="nav-other">
             <a href='#about' id="nav-about-font">ABOUT</a>
             <a href='#skills' id="nav-skills-font">SKILLS</a>
-            <a href='#projects' id="nav-projects-font">PROJECTS</a>
+            <a href='#projects-font' id="nav-projects-font">PROJECTS</a>
             <a 
             href="https://docs.google.com/document/d/1DVT0-fNo3kYleiR-_dJPom5PQoEmey-wAqZJ0GNS3_4/edit?usp=sharing"
             target="_blank"
@@ -40,15 +40,10 @@
             </div>
             <div>
             <p class="home-font">Hi! My name is</p>
-            <p class="name-font">Edward Yuabov</p>
+            <p class="name-font"><b>Edward Yuabov</b></p>
             <p class="home-font">I'm a FullStack Software Developer</p>
             <p id="about-p">
                 Software engineer with expertise in multiple languages and frameworks. With a passion for innovation and problem-solving, I have worked on a range of projects, from small-scale web applications to complex enterprise-level systems.
-                <img
-                id="click-bar"
-                alt=""
-                src="https://static.wixstatic.com/media/34168b_d90dce54c59542ffa482c91aacbb6a32~mv2.gif"
-            />
             </p>
             </div> 
         </div> 
@@ -57,6 +52,7 @@
             <div id="about-layout">
                 <div>
                     <p id="about-font">ABOUT</p>
+                    <p id="about-subfont">WHO I AM</p>
                     <p id="about-par">
                         Hi!  I'm a full stack developer with a passion for learning new things. I have experience working with a variety of programming languages and frameworks, including JavaScript, Python, C++, and more. Whether it's working on complex algorithms or building sleek and responsive user interfaces, I love tackling new challenges and creating innovative solutions.
                         <br/>
@@ -68,16 +64,18 @@
                     </p>
                 
                 </div>
-                <div>
+                <div id="porfolio-pic-div">
                     <img id='portfolio-pic' src="https://i.postimg.cc/9Fdj3m2V/portfolio-pic.jpg" alt="hello"/>
                 </div>
             </div>
         </div>
     <div id="skills">
+    <div>
+        <div id="skills-font-layout">
+            <p id="skills-font">SKILLS</p>
+            <p id="skills-subfont">WHAT I CAN DO</p>
+        </div>
         <div id="skills-layout">
-            <div>
-                <p id="skills-font">SKILLS:</p>
-            </div>
             <div class="skill-container">
                 <img class='skill-img' src="https://cdn.worldvectorlogo.com/logos/html-1.svg"/>
                 <p class="skill">HTML</p>
@@ -111,7 +109,7 @@
                 <p class="skill">Vue.js</p>
             </div>
             <div class="skill-container">
-                <img class='skill-img' src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png"/>
+                <img id='skill-img-flask' src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png"/>
                 <p class="skill">Flask</p>
             </div>
             <div class="skill-container">
@@ -127,118 +125,42 @@
                 <p class="skill">SQL</p>
             </div>
             <div class="skill-container">
-                <img class='skill-img' src="https://cdn.cdnlogo.com/logos/m/30/mongodb-icon.svg"/>
+                <img id='skill-img-mongo' src="https://cdn.cdnlogo.com/logos/m/30/mongodb-icon.svg"/>
                 <p class="skill">Mongo</p>
             </div>
         </div>
     </div>
+    </div>
+
     <div id="projects">
-        <p id="projects-font">PROJECTS</p>
+    <div id="project-div">
+        <div id="project-font-layout">
+            <p id="projects-font">PROJECTS</p>
+            <p id="projects-subfont">WHAT IVE WORKED ON</p>
+        </div>
         <div id="projects-layout">
-            <div>
-                <img class='project-img' src="https://phantom-marca.unidadeditorial.es/f21a9f12a57a63c7ea4ee14e048aca9f/resize/1320/f/jpg/assets/multimedia/imagenes/2023/01/25/16746808818281.jpg"/>
-            </div>
-            <div>
-                <img class='project-img' src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
-            </div>
-            <div>
-                <img class='project-img' src="https://eidk95seyu2.exactdn.com/en/blog/wp-content/uploads/2022/03/2.jpg?strip=all&lossy=1&ssl=1"/>
-            </div>
-            <div>
-                <img class='project-img' src="https://neilpatel.com/wp-content/uploads/2017/09/blog-post-image-guide.jpg"/>
-            </div>
-            <!-- <div class="project-container">
-                <img class='project-img' src="https://phantom-marca.unidadeditorial.es/f21a9f12a57a63c7ea4ee14e048aca9f/resize/1320/f/jpg/assets/multimedia/imagenes/2023/01/25/16746808818281.jpg"/>
-                <div class="project-info">
-                    <h1>Hogwarts</h1>
-                    <p>
-                      Developed application displaying all fictional students attending
-                      hogwarts,
-                      <br />
-                      including their professor and grades
-                    </p>
-                    <h1>Technologies used</h1>
-                    <p>Languages: HTML5, CSS3, Javascript</p>
-                    <p>Node.js with express</p>
-                    <p>Sequelize server for database managment</p>
-                    <button class="link-button">
-                      <a
-                        href="https://salty-taiga-60643.herokuapp.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h1 class="live-site">Live Site</h1>
-                      </a>
+                <div class="project-img-layout"->
+                    <a href="hogwarts.html">
+                        <img id='hogwarts-img' src="https://phantom-marca.unidadeditorial.es/f21a9f12a57a63c7ea4ee14e048aca9f/resize/1320/f/jpg/assets/multimedia/imagenes/2023/01/25/16746808818281.jpg"/>
+                    </a>
+                    </div>
+                <div class="project-img-layout">
+                    <a href="marvel.html">
+                    <img id='marvel-img' src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
+                    </a>
                 </div>
-            </div>
-            <div class="project-container">
-                <img class='project-img' src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
-                <div class="project-info">
-                    <h1>Marvel Cinematic Universe</h1>
-                    <p>
-                      Application that displays all the movies from the Marvel cinematic
-                      universe
-                      <br />
-                      that includes information on the movies along with their
-                      respective trailers
-                    </p>
-                    <h1>Technologies used</h1>
-                    <p>Languages: HTML5, CSS3, Javascript</p>
-                    <button class="link-button">
-                      <a
-                        href="https://mcu.herokuapp.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h1 class="live-site">Live Site</h1>
-                      </a>
+                <div class="project-img-layout">
+                    <a href="blackjack.html">
+                    <img id='blackjack-img' src="https://crescent.edu/uploads/editor/images/Blackjack.png"/>
+                    </a>
                 </div>
-            </div>
-            <div class="project-container">
-                <img class='project-img' src="https://eidk95seyu2.exactdn.com/en/blog/wp-content/uploads/2022/03/2.jpg?strip=all&lossy=1&ssl=1"/>
-                <div class="project-info">
-                    <h1>Blackjack</h1>
-                    <p>
-                      A virtual card game in which a CPU deals cards to the player
-                      <br />
-                      The objective is to have a deck of cards which has a sum closest
-                      to the number 21
-                    </p>
-                    <h1>Technologies used</h1>
-                    <p>Languages: HTML5, CSS3, Javascript</p>
-                    <button class="link-button">
-                      <a
-                        href="https://parallel-holiday.surge.sh/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h1 class="live-site">Live Site</h1>
-                      </a>
+                <div class="project-img-layout">
+                    <a href="blog.html">
+                    <img id='blog-img' src="https://www-static.cdn-one.com/cmsimages/en_what-is-a-blog-1.png"/>
+                    </a>
                 </div>
-            </div>
-            <div class="project-container">
-                <img class='project-img' src="https://neilpatel.com/wp-content/uploads/2017/09/blog-post-image-guide.jpg"/>
-                <div class="project-info">
-                    <h1>BLOG</h1>
-                    <p>
-                      A website where the user can post blogs about their day to day
-                      life... with pictures!!
-                    </p>
-                    <h1>Technologies used</h1>
-                    <p>Languages: HTML5, CSS3, Javascript</p>
-                    <p>Node.js with express</p>
-                    <p>MongoDB with Mongoose for database management</p>
-                    <button class="link-button">
-                      <a
-                        href="https://still-wave-91765.herokuapp.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h1 class="live-site">Live Site</h1>
-                      </a>
-                </div>
-            </div>
-        </div> -->
+        </div>
+    </div>
     </div>
     <footer>
         <div>
@@ -253,5 +175,13 @@
             <p id="text-footer">©2023 Edward Yuabov</p>
         </div>
     </footer>
+<script>
+const showDetails = (img) => {
+  img.style.opacity = 0.3
+}
+const reset = (img) => {
+  img.style.opacity = 1
+}
+</script>
 </body>
 </html>
